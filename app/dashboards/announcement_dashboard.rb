@@ -10,7 +10,9 @@ class AnnouncementDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     published_at: Field::DateTime,
-    announcement_type: Field::String,
+    announcement_type: Field::Select.with_options(
+      collection: ['fix','new','update']
+    ),
     name: Field::String,
     description: Field::Text,
     created_at: Field::DateTime,
