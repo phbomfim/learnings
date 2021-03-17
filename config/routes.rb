@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :users
     resources :announcements
 
-    root to: "users#index"
+    root to: "announcements#index"
   end
 
   get '/privacy', to: 'home#privacy'
