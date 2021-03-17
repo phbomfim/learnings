@@ -1,2 +1,24 @@
-<h1>Welcome to Jumpstart!</h1>
-<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+<h1>Daily Learnings</h1>
+
+<br>
+
+<div class="card">
+  <div class="card-body">
+    <% @announcements.each_with_index do |announcement, index| %>
+      <% if index != 0 %>
+        <div class="row"><div class="col"><hr /></div></div>
+      <% end %>
+
+      <div class="row announcement" id="<%= dom_id(announcement) %>">
+        <div class="col-sm-1 text-center">
+            <strong><%= announcement.published_at.strftime("%b %d") %></strong>
+        </div>
+        <div class="col">
+          <h4 class="<%= announcement_class(announcement.announcement_type) %>"><%= announcement.name %></h4>
+          <br>
+          <%= simple_format announcement.description %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
