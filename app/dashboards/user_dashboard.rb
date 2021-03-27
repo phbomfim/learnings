@@ -10,8 +10,6 @@ class UserDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     avatar_attachment: Field::HasOne,
     avatar_blob: Field::HasOne,
-    notifications: Field::HasMany,
-    services: Field::HasMany,
     id: Field::Number,
     email: Field::String,
     encrypted_password: Field::String,
@@ -34,8 +32,6 @@ class UserDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = %i[
   avatar_attachment
   avatar_blob
-  notifications
-  services
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -43,8 +39,6 @@ class UserDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = %i[
   avatar_attachment
   avatar_blob
-  notifications
-  services
   id
   email
   encrypted_password
@@ -65,8 +59,6 @@ class UserDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
   avatar_attachment
   avatar_blob
-  notifications
-  services
   email
   encrypted_password
   reset_password_token
