@@ -1,4 +1,9 @@
-<h1>What's news ?!</h1>
+<div class="d-flex align-items-center justify-content-between mb-5">
+    <h1 class="fw-bold">What's news ?!</h1>
+   <% if user_signed_in? %>
+        <%= link_to "Create a new post", "/admin/announcements/new/",  class: "btn btn-primary" %>
+    <% end %>
+</div>
 
 <br>
 
