@@ -1,5 +1,5 @@
 <div class="d-flex align-items-center justify-content-between mb-5">
-    <h1 class="fw-bold">What's news ?!</h1>
+    <h1><strong>What's news ?!</strong></h1>
    <% if user_signed_in? %>
         <%= link_to "Create a new post", "/admin/announcements/new/",  class: "btn btn-primary" %>
     <% end %>
@@ -19,7 +19,11 @@
             <strong><%= announcement.published_at.strftime("%b %d") %></strong>
         </div>
         <div class="col">
-          <h4 class="<%= announcement_class(announcement.announcement_type) %>"><%= announcement.name %></h4>
+          <% if user_signed_in?%>
+            <h4><%= link_to announcement.name, "/admin/announcements/#{announcement.id}/edit/", class:"#{announcement_class(announcement.announcement_type)}"%></h4>
+          <% else %>
+            <h4 class="<%= announcement_class(announcement.announcement_type)%>"><%= announcement.name %></h4>
+          <% end %>
           <br>
           <%= simple_format announcement.description %>
         </div>
