@@ -1,7 +1,8 @@
-# Daily Learnings
+# <div align="center">Daily Learnings</div>
 
-A simple page to expose your daily learnings to community.
+##### <div align="center">A simple page to expose your daily learnings to community.</div>
 
+![img](https://i.imgur.com/qZT15Wl.png)
 
 ## Prerequisites
 
@@ -39,5 +40,5 @@ A simple page to expose your daily learnings to community.
 
 ## Contribuition
 
-- This repositorie is public and if you wanna help me, open a [Pull Request](https://github.com/phbomfim/learnings/pulls/)
-- If you find a error, help me and open a [Issue](https://github.com/phbomfim/learnings/issues/)
+- This repositorie is public and if you wanna help me open a [Pull Request](https://github.com/phbomfim/learnings/pulls/)
+- If you find a error help me and open a [Issue](https://github.com/phbomfim/learnings/issues/)
