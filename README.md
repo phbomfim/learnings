@@ -4,13 +4,13 @@ A simple page to expose your daily learnings to community.
 
 
 ## Prerequisites
-------
+
 1. Git
 2. Rails 2.6.0
 3. PostgreSQL
 
 ## Installation Steps  
-------
+
 
 ##### 1. Clone the repository
 
@@ -32,8 +32,6 @@ A simple page to expose your daily learnings to community.
 
 ```$ rails s ```
 
------
 
-
-### Contribuition
+## Contribuition
 
