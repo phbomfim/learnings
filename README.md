@@ -1,24 +1,39 @@
-# README
+# Daily Learnings
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple page to expose your daily learnings to community.
 
-Things you may want to cover:
 
-* Ruby version
+## Prerequisites
+------
+1. Git
+2. Rails 2.6.0
+3. PostgreSQL
 
-* System dependencies
+## Installation Steps  
+------
 
-* Configuration
+##### 1. Clone the repository
 
-* Database creation
+```$ git clone https://github.com/phbomfim/learnings.git  ```
 
-* Database initialization
+##### 2. Change the working directory
 
-* How to run the test suite
+```$ cd learnings ```
 
-* Services (job queues, cache servers, search engines, etc.)
+##### 3. Install dependencies
 
-* Deployment instructions
+```$ bundle install ```
 
-* ...
+##### 4. Migrate a database
+
+```$ rails db:migrate ```
+
+##### 5. Run the app
+
+```$ rails s ```
+
+-----
+
+
+### Contribuition
+
